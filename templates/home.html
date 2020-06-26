@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p> {{ leha.name }}</p>
+{% if is_started %}
+<button id="targeton">ЗАПУСТИТЬ ЭТУ ХУЕТУ БЛЯТЬ ЗАВОДИИИИИИИИСЬ!</button>
+{% else %}
+<button id="targetoff">ВЫРУБИ ЭТО ДЕРЬМООООО!</button>
+{% endif %}
+{% endblock content %}
