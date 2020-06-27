@@ -6,8 +6,9 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     is_started = True
-    leha = {'name': 'Пидор'}
-    return render_template('home.html', leha=leha, is_started=is_started)
+    car = {'name': 'ВАЗ-2110'}
+    user = {'name': 'Бычков Алексей Андреевич'}
+    return render_template('home.html', car=car, is_started=is_started, user=user)
 
 
 @app.route('/car/<id>', methods=['GET', 'POST'])
@@ -21,10 +22,11 @@ def car(id):
         data = request.get_json()
         data['модель']  # обращение к json
 
+
 @app.route('/test', methods=['GET', 'POST'])
 def test():
     if request.method == 'GET':
         data = request.values
-        return 'Я ПОССАЛ', 200
+        return 'Я ПОССАЛ'
     else:
         return 'Я ОБОСРАЛСЯ'
