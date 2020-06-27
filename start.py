@@ -1,14 +1,30 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 
 app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def home():
     is_started = True
     car = {'name': 'ВАЗ-2110'}
     user = {'name': 'Бычков Алексей Андреевич'}
     return render_template('home.html', car=car, is_started=is_started, user=user)
+
+
+@app.route('/parametrs')
+def parametrs():
+    is_started = True
+    car = {'name': 'ВАЗ-2110'}
+    user = {'name': 'Бычков Алексей Андреевич'}
+    return render_template('parametrs.html', car=car, is_started=is_started, user=user)
+
+
+@app.route('/errors')
+def errors():
+    is_started = True
+    car = {'name': 'ВАЗ-2110'}
+    user = {'name': 'Бычков Алексей Андреевич'}
+    return render_template('errors.html', car=car, is_started=is_started, user=user)
 
 
 @app.route('/car/<id>', methods=['GET', 'POST'])

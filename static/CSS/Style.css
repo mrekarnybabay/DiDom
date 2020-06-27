@@ -20,6 +20,8 @@
     display: inline-flex;
     width: auto;
     padding: 10px 50px;
+    text-decoration: none;
+    color: #f2f2f2;
 }
 
 .menu {
@@ -77,8 +79,9 @@
     justify-content: center;
     color: #f2f2f2;
 }
-.stop-button{
-     margin: 0px auto;
+
+.stop-button {
+    margin: 0px auto;
     padding: 50px 50px;
     width: 70px;
     height: 70px;
@@ -96,7 +99,8 @@
     justify-content: center;
     color: #f2f2f2;
 }
-.regular-button{
+
+.regular-button {
     background-color: #6393a6;
     padding: 5px 10px;
     margin: 5px 0px;

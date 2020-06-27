@@ -16,13 +16,19 @@ $("#targetoff").click(function () {
     alert("Handler for .click() called.");
 });
 $("#home-button").click(function () {
+    $.get('/test', function (data) {
+        console.log(data);
+    })
     alert("Ты нажал на главную");
 });
 $("#parametrs-button").click(function () {
+    $.get('/test', function (data) {
+        console.log(data);
+    })
     alert("Ты нажал на параметры");
 });
 $("#errors-button").click(function () {
-    alert("Ты нажал на ошибки");
+   alert("Ты нажал на ошибки");
 });
 $("#start-engine").click(function () {
     $.get('/test', function (data) {

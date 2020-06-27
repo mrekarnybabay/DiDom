@@ -10,9 +10,9 @@
 </div>
 <div style="display: flex; justify-content: center;">
     <div class="menu">
-        <span id="home-button" class="menu-title">Главная</span>
-        <span id="parametrs-button" class="menu-title">Параметры</span>
-        <span id="errors-button" class="menu-title">Ошибки</span>
+        <a id="home-button" class="menu-title" href="{{ url_for('home')}}">Главная</a>
+        <a id="parametrs-button" class="menu-title" href="{{ url_for('parametrs')}}">Параметры</a>
+        <a id="errors-button" class="menu-title" href="{{ url_for('errors')}}">Ошибки</a>
 
     </div>
     <div class="designpro"></div>
