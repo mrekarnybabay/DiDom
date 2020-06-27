@@ -2,7 +2,18 @@
 {% block content %}
 
 <div>
-Страница параметров
+    <table width="100%" style="margin-top: 15px">
+        <thead class="top-header">
+        <td>Параметр</td>
+        <td>Значение</td>
+        </thead>
+        {% for parm in parms %}
+        <tr class="parmst">
+            <td >{{ parm.name }}</td>
+            <td class="parmvalue">{{ parm.value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 
 

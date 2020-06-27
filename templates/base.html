@@ -15,12 +15,14 @@
         <a id="errors-button" class="menu-title" href="{{ url_for('errors')}}">Ошибки</a>
 
     </div>
-    <div class="designpro"></div>
-    <div class="content">
-        {% block content %}
+    <div class="designpro">
+        <div class="content">
+            {% block content %}
 
-        {% endblock %}
+            {% endblock %}
+        </div>
     </div>
+
 
 </div>
 </body>

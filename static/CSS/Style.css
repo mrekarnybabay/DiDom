@@ -39,16 +39,18 @@
     background-color: #a6430a;
     width: 600px;
     height: 3px;
+    justify-content: center;
 }
 
 .content {
+    width: 450px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
-    position: absolute;
-    margin: 40px 0px 0px 0px;
+    display: block;
+    margin: 0px auto;
 }
 
 .top-header {
-    width: 400px;
+    width: 300px;
     letter-spacing: 0.2em;
     margin: 10px 0px 0px 0px;
     position: relative;
@@ -104,6 +106,22 @@
     background-color: #6393a6;
     padding: 5px 10px;
     margin: 5px 0px;
+}
+
+.errorcode {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.parmst {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.parmvalue {
+    width: 30px;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 body {

@@ -2,7 +2,20 @@
 {% block content %}
 
 <div>
-Страница ошибок
+    <table width="100%" style="margin-top: 15px">
+        <thead class="top-header">
+        <td>Код</td>
+        <td>Наименование</td>
+        <td>Дата</td>
+        </thead>
+        {% for error in errors %}
+        <tr>
+            <td class="errorcode">{{ error.code }}</td>
+            <td>{{ error.name }}</td>
+            <td> {{error.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 
 

@@ -16,27 +16,21 @@ $("#targetoff").click(function () {
     alert("Handler for .click() called.");
 });
 $("#home-button").click(function () {
-    $.get('/test', function (data) {
-        console.log(data);
-    })
-    alert("Ты нажал на главную");
 });
 $("#parametrs-button").click(function () {
-    $.get('/test', function (data) {
-        console.log(data);
-    })
-    alert("Ты нажал на параметры");
 });
 $("#errors-button").click(function () {
-   alert("Ты нажал на ошибки");
 });
 $("#start-engine").click(function () {
-    $.get('/test', function (data) {
+    $.get('/start_engine', function (data) {
         console.log(data);
     })
     alert("Ты нажал на start");
 });
 $("#stop-engine").click(function () {
+    $.get('/stop_engine', function (data) {
+        console.log(data);
+    })
     alert("Ты нажал на stop");
 });
 $("#change-car").click(function () {
